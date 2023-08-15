@@ -1,8 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+
 * {
   margin: 0;
   padding: 0;
+  font-family: "Inter", sans-serif;
 }
 
+/* Section 1 */
 .heading {
   background-color: #1f2937;
   padding: 0 15%;
@@ -29,6 +33,10 @@ header > .nav-links {
   gap: 2rem;
 }
 
+header > .nav-links > li {
+  cursor: pointer;
+}
+
 .description {
   display: flex;
   padding: 50px 0;
@@ -38,7 +46,7 @@ header > .nav-links {
 .description > .content {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
   flex: 1;
 }
 
@@ -67,4 +75,92 @@ header > .nav-links {
 .description > img {
   height: 300px;
   flex: 1;
+}
+
+/* Section 2 */
+.info {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 5rem 0;
+}
+
+.info > h3 {
+  font-size: 36px;
+  font-weight: extra-bold;
+  color: #1f2937;
+}
+
+.info-container {
+  display: flex;
+  margin: 2rem 0;
+  justify-content: space-between;
+}
+
+.info-element {
+  width: 10rem;
+  height: 10rem;
+}
+
+.info-element > .img {
+  border: 2px solid #3882f6;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+}
+
+.info-element > p {
+  font-size: 0.8rem;
+  margin: 0.5rem 0;
+}
+
+/* Section 3 */
+.testimonial {
+  background-color: #e5e7eb;
+  padding: 5rem 25%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color: #1f2937;
+}
+
+.testimonial > .quote {
+  font-size: 36px;
+  font-weight: 100;
+}
+
+.testimonial > .author {
+  font-weight: bold;
+}
+
+/* Section 4 */
+.sign-up {
+  background-color: #3882f6;
+  width: 40%;
+  margin: 5rem auto;
+  padding: 3rem 6rem;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sign-up button {
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 0.5rem 2rem;
+  font-size: 16px;
+  color: #f9faf8;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  background-color: #1f2937;
+  padding: 1rem;
+  text-align: center;
+  color: white;
 }
